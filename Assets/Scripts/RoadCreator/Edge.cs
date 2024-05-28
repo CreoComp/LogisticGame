@@ -5,6 +5,12 @@
 
     public int EdgeWeight = 0;
 
+    public int GetWeight()
+    {
+        CountWeight();
+        return EdgeWeight;
+    }
+
     public void CountWeight()
     {
         if (FirstPoint.Weight >= SecondPoint.Weight)

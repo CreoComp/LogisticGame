@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 155, y: -47}
-  m_SizeDelta: {x: 535.67, y: 70.1}
+  m_AnchoredPosition: {x: 90, y: -28.427}
+  m_SizeDelta: {x: 535.67, y: 56.8536}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2999106091174445205
 CanvasRenderer:
@@ -171,7 +171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 541.16, y: 0.0000052452}
+  m_AnchoredPosition: {x: 472.99994, y: 14.000005}
   m_SizeDelta: {x: 270.15, y: 155.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4677538921096912560
@@ -255,7 +255,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5425467279760036546}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 204330279742215861}
+        m_TargetAssemblyTypeName: TransportItem, Assembly-CSharp
+        m_MethodName: UnRent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2925985654034217888
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,8 +442,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 693.3692, y: 51.892532}
+  m_SizeDelta: {x: 1300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5040606257560599520
 CanvasRenderer:
@@ -461,8 +473,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 2
+  m_Sprite: {fileID: 21300000, guid: 7d26ad61d5dc7794285076c525d97364, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -486,6 +498,8 @@ MonoBehaviour:
   CategoryNameText: {fileID: 8292541746975120080}
   LoadCapacityText: {fileID: 5787968059869132676}
   RentCostText: {fileID: 6265401378313684248}
+  ButtonRent: {fileID: 8636014068314018316}
+  ButtonUnRent: {fileID: 1710081074344320919}
 --- !u!1 &7810115928476213465
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,8 +534,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -398, y: 0.000015276}
-  m_SizeDelta: {x: 516.74, y: 184.46}
+  m_AnchoredPosition: {x: -395.38, y: 14}
+  m_SizeDelta: {x: 435.0842, y: 184.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1734752296199805174
 CanvasRenderer:
@@ -551,7 +565,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041D\u0430\u043F\u0438\u0442\u043A\u0438"
+  m_text: "\u0417\u0430\u043C\u043E\u0440\u043E\u0436\u0435\u043D\u043D\u044B\u0435
+    \u0438\u0437\u0434\u0435\u043B\u0438\u044F"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 250834e905afa464d8141a8a35f24b61, type: 2}
   m_sharedMaterial: {fileID: -7454428082895549845, guid: 250834e905afa464d8141a8a35f24b61, type: 2}
@@ -790,7 +805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 541.16, y: 0.0000052452}
+  m_AnchoredPosition: {x: 473, y: 14}
   m_SizeDelta: {x: 270.15, y: 155.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8102796436719088669
@@ -874,7 +889,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 872650420955256058}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 204330279742215861}
+        m_TargetAssemblyTypeName: TransportItem, Assembly-CSharp
+        m_MethodName: Rent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8736731319541068513
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,8 +936,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 155, y: 49.640007}
-  m_SizeDelta: {x: 535.67, y: 99.28}
+  m_AnchoredPosition: {x: 89.99994, y: 55.213013}
+  m_SizeDelta: {x: 535.67, y: 80.5196}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5193062583946237054
 CanvasRenderer:

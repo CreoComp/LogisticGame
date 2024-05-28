@@ -1,4 +1,4 @@
-﻿using UnityEditor;
+﻿/*using UnityEditor;
 using UnityEngine;
 
 [CustomEditor(typeof(RoadGenerator))]
@@ -54,14 +54,19 @@ public class RoadGeneratorEditor : Editor
         _generator = (RoadGenerator)target;
         _weight = EditorGUILayout.IntSlider(_weight, 1, 3);
 
-/*        if (GUILayout.Button("Save file"))
+*//*        if (GUILayout.Button("Save stations"))
         {
-            Roads.Instance.SaveToFile();
-        }
-        if (GUILayout.Button("Load file"))
-        {
-            Roads.Instance.LoadFromFile();
+            Roads.Instance.AddStations();
         }*/
+
+        /*        if (GUILayout.Button("Save file"))
+                {
+                    Roads.Instance.SaveToFile();
+                }
+                if (GUILayout.Button("Load file"))
+                {
+                    Roads.Instance.LoadFromFile();
+                }*/
 
         /*if (GUILayout.Button("Instantiate Point"))
         {
@@ -82,14 +87,14 @@ public class RoadGeneratorEditor : Editor
         /*if (GUILayout.Button("Save Points"))
         {
             _generator.SavePoints();
-        }*/
+        }*//*
 
         if (GUILayout.Button("Draw Road"))
         {
             Roads.Instance.DrawNewRoad();
         }
 
-        if (GUILayout.Button("SetPointAsStation"))
+*//*        if (GUILayout.Button("SetPointAsStation"))
         {
             PointInfo pointInfo = new PointInfo();
             pointInfo.SetPosition(Selection.gameObjects[0].transform.position);
@@ -106,7 +111,8 @@ public class RoadGeneratorEditor : Editor
             pointInfo.Weight = Selection.gameObjects[0].GetComponent<Point>().Weight;
 
             Roads.Instance.DestroyPointAsStation(pointInfo);
-        }
+        }*//*
 
     }
 }
+*/
